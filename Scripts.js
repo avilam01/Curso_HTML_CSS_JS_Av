@@ -1,0 +1,55 @@
+
+/* controles de video */ 
+
+
+let video=document.querySelector('video');
+let playBoton = document.getElementById("play");
+let pauseBoton= document.getElementById("pause");
+
+
+
+setTimeout(()=>{
+
+    document.getElementById('showTime').innerHTML=` Duracion video  4:41`},100);
+
+for (let i = 0; i < video.tim; i++) {
+    console.log(video.currentTime)
+    
+}
+
+playBoton.addEventListener('click',()=>{
+    video.play()
+
+   
+});
+
+pauseBoton.addEventListener('click',()=>{
+    video.pause();
+    flag=false;
+});
+
+
+
+function desplegar() {
+    let submenu = document.querySelector(".tema");
+    submenu.classList.toggle("tema-block")
+}
+
+
+
+
+/* Modo día */
+
+function desptemaDia() {
+    let body = document.querySelector("body");
+    body.classList.remove()
+    body.classList.add("body-day")
+}
+
+
+/* Modo Noche */
+function temaNoche() {
+    let body = document.querySelector("body");
+    body.classList.remove()
+    body.classList.add("body-night")
+}
