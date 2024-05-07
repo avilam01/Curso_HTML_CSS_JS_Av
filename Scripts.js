@@ -12,7 +12,7 @@ setTimeout(()=>{
 
     document.getElementById('showTime').innerHTML=` Duracion video  4:41`},100);
 
-for (let i = 0; i < video.tim; i++) {
+for (let i = 0; i < video.currentTime; i++) {
     console.log(video.currentTime)
     
 }

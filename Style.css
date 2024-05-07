@@ -88,24 +88,10 @@ main{
 }
 
 .titulo-blanco{
-    /*background-image: url("./assets/imagenes/codigo.jpg");
-    min-height: 500px;
-    background-color: #eeeeee;
-
-    background-size: cover;
-    justify-content: space-around;
-    padding: 0px 100px;
-    color: white;
-    
-    font-size: 28px;
-    display: flex;
-    */
 
 
     align-items: center;
   
-
-
 }
 
 
@@ -201,15 +187,16 @@ color:#181D31;
 }
 
 .boton-ver{
-    padding: 10px ;
+   padding: 10px ;
    border-radius: 10px;
    background-color: #181D31;
+   color:#F0F5E4
    font-family: Arial, Helvetica, sans-serif;
    box-shadow: 2px 3px #678983;
    text-align: center;
-    text-decoration: none;
-    width: 40%;
-    margin-bottom: 20px;
+   text-decoration: none;
+   width: 40%;
+   margin-bottom: 20px;
 }
 
 .boton-ver:active{
@@ -383,3 +370,54 @@ footer{
     text-shadow: 2px 2px gray, 3px 3px #E6DDC4;
 }
 
+
+
+/*----- logo ------*/
+rect#mon1, polygon#tec1{
+    animation: part_1 ease-in 5s  ;
+    animation-iteration-count:1 ;
+    }
+    
+rect#mon2,polygon#tec2 {
+animation: part_2 ease-in 5s  ;
+animation-iteration-count:1 ;
+}
+@keyframes part_1{
+    0% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    20% {
+    transform: translate(0,-10px);
+    opacity:0;}
+    30% {
+    transform: translate(0,0);
+    opacity:1;}
+    90% {
+    transform: translate(0,0);
+    opacity:1;}
+    
+    100% {
+        transform: translate(0,0);
+        opacity:1;}
+}   
+    
+
+@keyframes part_2 {
+    0% {
+        transform: translate(0,-10px);
+        opacity:0;}
+        30% {
+        transform: translate(0,-10px);
+        opacity:0;}
+        40% {
+        transform: translate(0,0);
+        opacity:1;}
+        90% {
+        transform: translate(0,0);
+        opacity:1;}
+
+        100% {
+            transform:translate(0,0);
+            opacity:1;}
+        }  
+/* ----------     hoja index      ------------*/
