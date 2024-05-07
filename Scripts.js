@@ -18,8 +18,8 @@ for (let i = 0; i < video.currentTime; i++) {
 }
 
 playBoton.addEventListener('click',()=>{
-    video.play()
-
+    video.play();
+    
    
 });
 
